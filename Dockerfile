@@ -8,7 +8,7 @@ RUN apt-get install wget sudo apt-utils software-properties-common -y
 
 WORKDIR /root
 RUN wget https://github.com/eXperiencePoints/XPCoin/releases/download/1.0.0/XPd-linux-compile-from-source.sh
-RUN echo y | sh ./XPd-linux-compile-from-source.sh
+RUN echo n | sh ./XPd-linux-compile-from-source.sh
 
 VOLUME ["/root/.XP"]
 
